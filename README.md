@@ -1,18 +1,42 @@
-# TradeZen – Smart Trading, Stress-Free
+# Next.js & HeroUI Template
 
-## About
+This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
 
-📊 Track. Analyze. Trade with Clarity.
+[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
 
-TradeZen is your ultimate trading companion, designed to help you track trades,
-manage risks and optimize profits—all while maintaining a calm and strategic approach to the market.
-Whether you're into stocks, crypto, forex,
-or options, TradeZen keeps your trading journey organized, insightful, and stress-free.
+## Technologies Used
 
-🔹 Seamless Trade Tracking – Log buy/sell transactions, stock count, and stop-loss levels.
-📈 Advanced Analytics – Gain insights with daily, monthly, and yearly performance reports.
-⚡ Risk & Loss Protection – Set alerts to safeguard your investments.
-💰 Profit & Loss Reports – Monitor gains and refine your strategy.
-🔔 Real-Time Notifications – Stay ahead with key market updates.
+- [Next.js 14](https://nextjs.org/docs/getting-started)
+- [HeroUI v2](https://heroui.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Tailwind Variants](https://tailwind-variants.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [next-themes](https://github.com/pacocoursey/next-themes)
 
-Trade smarter, trade Zen. 🚀
+## Getting Started
+
+### Install dependencies
+
+You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+
+```bash
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+## Configure Vercel
+
+* Settings -> Build & Development Settings -> Project Settings
+  * Install Command: `npm install && npx prisma generate`
+
+## Prisma Deploy
+
+* When you are sure about a migration in production:
+  * Change DATABASE_URL to production from a local system.
+  * Deploy migrations: `npx prisma migrate deploy`
