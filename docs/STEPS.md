@@ -63,7 +63,7 @@ Reference: [HeroUI Pro Documentation](https://www.heroui.pro/documentation)
   * `generator client`: This section tells Prisma to generate the Prisma Client, which is used for interacting with the database.
   * `datasource db`: This defines the connection to your database. The default provider is already set to Postgres.
 * Update DATABASE_URL in the [.env](../.env) file.
-* Add Account, Session, User, and VerificationRequest models following [this reference](https://next-auth.js.org/v3/adapters/prisma#setup)
+* Add Account, Session, User, and VerificationRequest models following [this reference](https://authjs.dev/getting-started/adapters/prisma?framework=next-js#schema)
 * Generate Prisma Client: `npx prisma generate`
 * Apply migrations: `npx prisma migrate dev --name init`
   * As you are applying the migration for the first time, make sure that the DATABASE_URL is set to the development database.
@@ -77,5 +77,23 @@ Reference: [HeroUI Pro Documentation](https://www.heroui.pro/documentation)
 
 ### References
 
-* https://next-auth.js.org/v3/adapters/prisma
 * https://www.prisma.io/docs/guides/prisma-orm-with-nextjs
+
+## Setup Auth.js
+
+### Install Auth.js
+
+* Install dependencies: `npm install next-auth@beta @auth/prisma-adapter`
+* Setup environment by generating `AUTH_SECRET`: `npx auth secret`
+  * The library uses this random value to encrypt tokens and email verification hashes.
+  * By default, the value is saved to `.env.local`. Move it to your environment file. Then you can delete `.env.local`.
+  * You must also define it in the production.
+* Create the following files following [this reference](https://authjs.dev/getting-started/installation?framework=next-js):
+  * [auth.ts](../auth.ts)
+  * [route.ts](../app/api/auth/%5B...nextauth%5D/route.ts)
+  * [middleware.ts](../middleware.ts)
+
+### References
+
+* https://authjs.dev/getting-started/installation?framework=next-js
+* https://authjs.dev/getting-started/adapters/prisma?framework=next-js
