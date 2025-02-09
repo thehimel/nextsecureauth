@@ -67,10 +67,15 @@ Reference: [HeroUI Pro Documentation](https://www.heroui.pro/documentation)
 * Generate Prisma Client: `npx prisma generate`
 * Apply migrations: `npx prisma migrate dev --name init`
   * As you are applying the migration for the first time, make sure that the DATABASE_URL is set to the development database.
-* Reference: 
+* Implement Prisma client singleton with Accelerate extension: [client.ts](../prisma/client.ts)
 
 ### Related Commands
 
 * Create the Prisma Client, allowing you to interact with your database: `npx prisma generate`
 * Generate and apply database migrations based on your Prisma schema: `npx prisma migrate dev`
 * Convert your database schema into a Prisma schema: `npx prisma db pull`
+
+### References
+
+* https://next-auth.js.org/v3/adapters/prisma
+* https://www.prisma.io/docs/guides/prisma-orm-with-nextjs
