@@ -40,3 +40,13 @@ Reference: [HeroUI Pro Documentation](https://www.heroui.pro/documentation)
 * You can then use this database as your production database.
 
 > You can create multiple databases with Neon.
+
+## Configure Prisma
+
+* Install dependencies: `npm install prisma @prisma/client @prisma/extension-accelerate`
+* Initialize Prisma ORM: `npx prisma init`
+
+### Related Commands
+
+* Convert your database schema into a Prisma schema: `prisma db pull`
+* Create the Prisma Client, allowing you to interact with your database: `prisma generate`
