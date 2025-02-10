@@ -1,7 +1,10 @@
 # Setup Auth.js
 
+We will use [Auth.js](https://authjs.dev)
+
 ## Install Auth.js
 
+* Follow [this guideline](https://authjs.dev/getting-started/installation?framework=next-js)
 * Install dependencies: `npm install next-auth@beta @auth/prisma-adapter`
 * Setup environment by generating `AUTH_SECRET`: `npx auth secret`
   * The library uses this random value to encrypt tokens and email verification hashes.
@@ -14,13 +17,13 @@
 
 ### References
 
-* https://authjs.dev/getting-started/installation?framework=next-js
 * https://authjs.dev/getting-started/adapters/prisma?framework=next-js
 
 ## Configure Provider
 
 ### Setup Google Provider
 
+* Follow [this guideline](https://authjs.dev/getting-started/providers/google?framework=next-js)
 * Set environment variables: `AUTH_GOOGLE_ID` and `AUTH_GOOGLE_SECRET`.
 * Add `Google` as a providers in [auth.ts](../../auth.ts)
 
@@ -76,10 +79,17 @@
 
 ### References
 
-* https://authjs.dev/getting-started/providers/google?framework=next-js
 * https://developers.google.com/identity/protocols/oauth2
 
 ## Test Signing in with Google OAuth
 
 * https://example.com/api/auth/signin
 * http://localhost:3000/api/auth/signin
+
+## Configure Prisma
+
+* Follow [this guideline](https://authjs.dev/getting-started/adapters/prisma)
+* Review [client.ts](../../prisma/client.ts)
+* Update [auth.ts](../../auth.ts)
+* Review [schema.prisma](../../prisma/schema.prisma)
+  * This is exactly similar to the Postgres schema defined [here](https://authjs.dev/getting-started/adapters/prisma?framework=next-js#schema)
