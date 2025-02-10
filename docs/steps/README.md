@@ -26,3 +26,14 @@ Explore [this](CONFIGURE_PRISMA.md)
 ## Setup Auth.js
 
 Explore [this](SETUP_AUTHJS.md)
+
+## Configure Vercel
+
+* Settings -> Build & Development Settings -> Project Settings
+  * Install Command: `npm install && npx prisma generate`
+
+## Prisma Deploy
+
+* When you are sure about a migration in production:
+  * Change `DATABASE_URL` to production from local server.
+  * Deploy migrations: `npx prisma migrate deploy`

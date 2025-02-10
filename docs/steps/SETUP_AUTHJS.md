@@ -14,6 +14,7 @@ We will use [Auth.js](https://authjs.dev)
   * [auth.ts](../../auth.ts)
   * [route.ts](../../app/api/auth/%5B...nextauth%5D/route.ts)
   * [middleware.ts](../../middleware.ts)
+* Add `SessionProvider` to wrap UI and theme providers in [providers.tsx](../../app/providers.tsx)
 
 ### References
 
