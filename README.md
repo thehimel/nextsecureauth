@@ -1,6 +1,7 @@
-# Next.js & HeroUI Template
+# NextSecureAuth
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
+A secure authentication solution built with Next.js and Auth.js,
+providing seamless user login, registration, and access control with modern security features.
 
 [Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
 

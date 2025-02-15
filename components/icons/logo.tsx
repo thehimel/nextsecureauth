@@ -19,7 +19,7 @@ export const Logo: React.FC<IconSvgProps> = ({ size = 36, width, height, ...prop
       x="50%"
       y="55%"
     >
-      A
+      N
     </text>
   </svg>
 );
