@@ -37,3 +37,36 @@ Explore [this](SETUP_AUTHJS.md)
 * When you are sure about a migration in production:
   * Change `DATABASE_URL` to production from local server.
   * Deploy migrations: `npx prisma migrate deploy`
+
+## Configure Prettier Line Length to 120 Characters
+
+* Update [.eslintrc.json](../../.eslintrc.json)
+
+```json
+{
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "printWidth": 120
+      }
+    ]
+  }
+}
+```
+
+## Configure the Sign In and Sign Out Pages
+
+* To set up the sign in and sign out routes, configure the following pages:
+  * [signin](../../app/auth/signin)
+  * [signout](../../app/auth/signout)
+* Define `signIn` and `signOut` pages in [auth.ts](../../auth.ts)
+* Add `signin` and `signout` links in [site.ts](../../config/site.ts)
+* Add the [auth-button.tsx](../../components/auth/auth-button.tsx) in navbar.
+
+## Create Favicon
+
+* Generate the SVG code for the logo.
+* Save it as a .svg file.
+* Convert the .svg file to .ico.
+* Save it as ![favicon.ico](../../public/favicon.ico)
