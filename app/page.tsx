@@ -5,7 +5,7 @@ import { button as buttonStyles } from "@heroui/theme";
 
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import { GithubIcon } from "@/components/icons/github";
 
 export default function Home() {
   return (
@@ -14,12 +14,8 @@ export default function Home() {
         <span className={title()}>Make&nbsp;</span>
         <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
         <br />
-        <span className={title()}>
-          websites regardless of your design experience.
-        </span>
-        <div className={subtitle({ class: "mt-4" })}>
-          Beautiful, fast and modern React UI library.
-        </div>
+        <span className={title()}>websites regardless of your design experience.</span>
+        <div className={subtitle({ class: "mt-4" })}>Beautiful, fast and modern React UI library.</div>
       </div>
 
       <div className="flex gap-3">

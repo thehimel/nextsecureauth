@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
 import { PuffLoader } from "react-spinners";
 
-import { Logo } from "@/components/myicons/logo";
+import { Logo } from "@/components/icons/logo";
 
 export default function SignInPage() {
   const [providers, setProviders] = useState<any>(null);

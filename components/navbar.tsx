@@ -16,10 +16,14 @@ import NextLink from "next/link";
 import clsx from "clsx";
 
 import AuthButton from "@/components/auth/auth-button";
-import { Logo } from "@/components/myicons/logo";
+import { Logo } from "@/components/icons/logo";
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
-import { TwitterIcon, GithubIcon, DiscordIcon, HeartFilledIcon, SearchIcon } from "@/components/icons";
+import { ThemeSwitch } from "@/components/theme/theme-switch";
+import { TwitterIcon } from "@/components/icons/twitter";
+import { GithubIcon } from "@/components/icons/github";
+import { DiscordIcon } from "@/components/icons/discord";
+import { HeartFilledIcon } from "@/components/icons/heart-filled";
+import { SearchIcon } from "@/components/icons/search";
 
 export const Navbar = () => {
   const searchInput = (
