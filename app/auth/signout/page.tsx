@@ -7,6 +7,7 @@ import { signOut, useSession } from "next-auth/react";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
+import { PuffLoader } from "react-spinners";
 
 import { Logo } from "@/components/myicons/logo";
 
@@ -38,7 +39,7 @@ export default function SignInPage() {
       </div>
       {status === "loading" && (
         <div className="flex flex-col items-center">
-          <div>Loading...</div>
+          <PuffLoader color={color} />
         </div>
       )}
       {status === "authenticated" && (
@@ -46,13 +47,7 @@ export default function SignInPage() {
           <Button
             key="signout"
             color="danger"
-            startContent={
-              <Icon
-                className="rotate-180"
-                icon="solar:minus-circle-line-duotone"
-                width={24}
-              />
-            }
+            startContent={<Icon className="rotate-180" icon="solar:minus-circle-line-duotone" width={24} />}
             variant="flat"
             onClick={() => signOut({ redirectTo: "/" })}
           >

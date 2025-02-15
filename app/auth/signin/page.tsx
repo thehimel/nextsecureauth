@@ -5,6 +5,7 @@ import { Button } from "@heroui/button";
 import { getProviders, signIn } from "next-auth/react";
 import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
+import { PuffLoader } from "react-spinners";
 
 import { Logo } from "@/components/myicons/logo";
 
@@ -29,13 +30,11 @@ export default function SignInPage() {
       <div className="flex flex-col items-center">
         <Logo className="" size={60} />
         <p className="text-xl font-medium mt-2">Sign In</p>
-        <p className="text-small text-default-500 mt-2">
-          Sign in to your account to continue
-        </p>
+        <p className="text-small text-default-500 mt-2">Sign in to your account to continue</p>
       </div>
       {!providers && (
         <div className="flex flex-col items-center">
-          <div>Loading...</div>
+          <PuffLoader color={color} />
         </div>
       )}
       {providers && (
