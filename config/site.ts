@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
+  name: "ABC",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
@@ -65,5 +65,7 @@ export const siteConfig = {
     docs: "https://heroui.com",
     discord: "https://discord.gg/9b6yyZKmH4",
     sponsor: "https://patreon.com/jrgarciadev",
+    signin: "/api/auth/signin",
+    signout: "/api/auth/signout",
   },
 };
