@@ -70,3 +70,7 @@ Explore [this](SETUP_AUTHJS.md)
 * Save it as a .svg file.
 * Convert the .svg file to .ico.
 * Save it as ![favicon.ico](../../public/favicon.ico)
+
+## Configure Default Theme
+
+* Define `DEFAULT_THEME` in [constants.ts](../../components/theme/constants.ts) and us it in [layout.tsx](../../app/layout.tsx)

@@ -42,3 +42,7 @@ npm run dev
 * When you are sure about a migration in production:
   * Change DATABASE_URL to production from a local system.
   * Deploy migrations: `npx prisma migrate deploy`
+
+## Change Default Theme
+
+* You can set the default theme in [constants.ts](components/theme/constants.ts)

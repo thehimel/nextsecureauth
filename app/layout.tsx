@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+
 import { Metadata, Viewport } from "next";
 import { Link } from "@heroui/link";
 import clsx from "clsx";
@@ -6,6 +7,7 @@ import React from "react";
 
 import { Providers } from "./providers";
 
+import { DEFAULT_THEME } from "@/components/theme/constants";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
@@ -33,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html suppressHydrationWarning lang="en">
       <head />
       <body className={clsx("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: DEFAULT_THEME }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">{children}</main>

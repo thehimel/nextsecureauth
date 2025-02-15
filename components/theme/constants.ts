@@ -6,5 +6,6 @@ export enum Colors {
 export enum Themes {
   DARK = "dark",
   LIGHT = "light",
-  SYSTEM = "system",
 }
+
+export const DEFAULT_THEME: Themes = Themes.DARK;
