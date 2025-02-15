@@ -5,6 +5,11 @@
 * Create the docker compose file: [docker-compose-db.yml](../../docker-compose-db.yml)
 * Set the following environment variables in the file: [.env](../../.env)
 * Start the server with `docker-compose -f docker-compose-db.yml up -d`
+  * Change the host port or container name in the Docker Compose file if another container on your system is using the same one.
+  * Ports are configured in the format `HOST_PORT:CONTAINER_PORT`.
+  * For example, `5434:5432` means HOST_PORT `5434` mapped to CONTAINER_PORT `5432`.
+  * You are free to change the `HOST_PORT`. Do not change the `CONTAINER_PORT`.
+  * The correct port inside the container for Postgres must always be `5432` unless you explicitly change the internal configuration of Postgres.
 * if the server already exists, connect to the server with DataGrip and create the database.
 * Then you can define: `DATABASE_URL="postgresql://POSTGRES_USER:POSTGRES_PASSWORD@HOST:PORT/POSTGRES_DB"` in the environment file.
 * In case you need to run any query from the postgres shell inside docker:
