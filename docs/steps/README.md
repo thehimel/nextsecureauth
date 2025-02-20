@@ -74,3 +74,9 @@ Explore [this](SETUP_AUTHJS.md)
 ## Configure Default Theme
 
 * Define `DEFAULT_THEME` in [constants.ts](../../components/theme/constants.ts) and us it in [layout.tsx](../../app/layout.tsx)
+
+# Make Site Name and Short Name Configurable
+
+* Make a dynamic [logo](../../components/icons/logo.tsx)
+* Add environment variables in [.env.example](../../.env.example)
+* Use the defined environment variables in [site.ts](../../config/site.ts)
