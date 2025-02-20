@@ -8,7 +8,7 @@ import React from "react";
 import { Providers } from "./providers";
 
 import { HeartFilledIcon } from "@/components/icons/heart-filled";
-import { DEFAULT_THEME } from "@/components/theme/constants";
+import { Colors, DEFAULT_THEME } from "@/components/theme/constants";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
+    { media: "(prefers-color-scheme: light)", color: Colors.WHITE },
+    { media: "(prefers-color-scheme: dark)", color: Colors.BLACK },
   ],
 };
 
