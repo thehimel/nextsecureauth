@@ -3,7 +3,7 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: process.env.NEXT_PUBLIC_SITE_NAME || "BrandName",
   shortName: process.env.NEXT_PUBLIC_SITE_SHORTNAME || "BN",
-  description: "Make beautiful websites regardless of your design experience.",
+  description: "A secure authentication solution built with Next.js and Auth.js.",
   navItems: [
     {
       label: "Home",
