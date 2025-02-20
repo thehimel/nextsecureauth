@@ -1,9 +1,7 @@
 # NextSecureAuth
 
-A secure authentication solution built with Next.js and Auth.js,
-providing seamless user login, registration, and access control with modern security features.
-
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+A secure authentication solution built with Next.js and Auth.js, providing seamless user login, registration, and access
+control with modern security features.
 
 ## Technologies Used
 
@@ -18,6 +16,11 @@ providing seamless user login, registration, and access control with modern secu
 - [Recharts](https://recharts.org/)
 
 ## Getting Started
+
+### Setting Up Environment Variables
+
+* Create a `.env` file by copying [.env.example](.env.example)
+* Open `.env` and update the variables as needed.
 
 ### Install dependencies
 
