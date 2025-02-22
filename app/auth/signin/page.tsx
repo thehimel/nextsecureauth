@@ -34,7 +34,7 @@ export default function SignInPage() {
       </div>
       {!providers && (
         <div className="flex flex-col items-center">
-          <PuffLoader color={color} />
+          <PuffLoader color={color} size={24} />
         </div>
       )}
       {providers && (

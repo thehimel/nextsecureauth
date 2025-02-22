@@ -39,7 +39,7 @@ export default function SignInPage() {
       </div>
       {status === "loading" && (
         <div className="flex flex-col items-center">
-          <PuffLoader color={color} />
+          <PuffLoader color={color} size={24} />
         </div>
       )}
       {status === "authenticated" && (
