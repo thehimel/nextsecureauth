@@ -16,9 +16,20 @@ We will use [Auth.js](https://authjs.dev)
   * [middleware.ts](../../middleware.ts)
 * Add `SessionProvider` to wrap UI and theme providers in [providers.tsx](../../app/providers.tsx)
 
-### References
+## Install React Spinners
 
-* https://authjs.dev/getting-started/adapters/prisma?framework=next-js
+* Install dependency: `npm install react-spinners`
+* In any component you can import any spinner as `import { PuffLoader } from "react-spinners";`
+* And then use it as `<PuffLoader color={color} size={24} />`
+
+## Configure the Sign In and Sign Out Pages
+
+* To set up the sign in and sign out routes, configure the following pages:
+  * [signin](../../app/auth/signin)
+  * [signout](../../app/auth/signout)
+* Define `signIn` and `signOut` pages in [auth.ts](../../auth.ts)
+* Add `signin` and `signout` links in [site.ts](../../config/site.ts)
+* Add the [auth-button.tsx](../../components/auth/auth-button.tsx) in navbar.
 
 ## Configure Provider
 
@@ -83,6 +94,11 @@ We will use [Auth.js](https://authjs.dev)
 * https://developers.google.com/identity/protocols/oauth2
 
 ## Test Signing in with Google OAuth
+
+* https://example.com/auth/signin
+* http://localhost:3000/auth/signin
+
+### Default Sign-In Endpoints (If Custom Pages Are Not Set)
 
 * https://example.com/api/auth/signin
 * http://localhost:3000/api/auth/signin

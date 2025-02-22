@@ -55,15 +55,6 @@ Explore [this](SETUP_AUTHJS.md)
 }
 ```
 
-## Configure the Sign In and Sign Out Pages
-
-* To set up the sign in and sign out routes, configure the following pages:
-  * [signin](../../app/auth/signin)
-  * [signout](../../app/auth/signout)
-* Define `signIn` and `signOut` pages in [auth.ts](../../auth.ts)
-* Add `signin` and `signout` links in [site.ts](../../config/site.ts)
-* Add the [auth-button.tsx](../../components/auth/auth-button.tsx) in navbar.
-
 ## Create Favicon
 
 * Generate the SVG code for the logo.
